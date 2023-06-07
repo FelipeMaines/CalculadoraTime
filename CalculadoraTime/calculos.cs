@@ -29,7 +29,10 @@ namespace CalculadoraTime
             return primeiroNumero * segundoNumero;
         }
 
-
+        public void verificar()
+        {
+            return;
+        }
     }
 
     
