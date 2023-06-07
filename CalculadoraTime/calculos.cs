@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CalculadoraTime
+﻿namespace CalculadoraTime
 {
     public class calculos
     {
@@ -33,6 +27,8 @@ namespace CalculadoraTime
         {
             return;
         }
+
+
     }
 
     

@@ -7,8 +7,5 @@
             Console.WriteLine("Hello");
             
         }
-
-
-        
     }
 }
