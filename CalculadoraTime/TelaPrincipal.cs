@@ -21,6 +21,7 @@ namespace CalculadoraTime
             Console.WriteLine("║ 2.  Efetuar uma Subtração        ║");
             Console.WriteLine("║ 3.  Efetuar uma Multiplicação    ║");
             Console.WriteLine("║ 4.  Efetuar uma Divisão          ║");
+            Console.WriteLine("║ 5.  Apresentar Menu              ║");
             Console.WriteLine("║ 0.  Fechar a Calculadora         ║");
             Console.WriteLine("╚══════════════════════════════════╝");
             Console.Write("Digite a opção desejada: ");
