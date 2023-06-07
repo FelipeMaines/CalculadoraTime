@@ -62,6 +62,13 @@
                         operacao = "/";
                         primeiroNumero = PegarPrimeiroNumero();
                         segundoNumero = PegarSegundoNumero();
+
+                        while(segundoNumero == 0)
+                        {
+                            Console.WriteLine("Segundo numero nao pode ser 0");
+                            segundoNumero = PegarSegundoNumero();
+                        }
+
                         resultado = calculo.Dividir(primeiroNumero, segundoNumero);
 
                         Console.WriteLine($"A resposta da opercao ficou em: {resultado}");
