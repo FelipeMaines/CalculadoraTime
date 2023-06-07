@@ -12,5 +12,9 @@
         {
             return;
         }
+        public class Menus
+        {
+
+        }
     }
 }
