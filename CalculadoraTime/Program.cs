@@ -19,13 +19,16 @@
 
                 switch (opcao)
                 {
+                    case "0":
+                        return; 
+
                     case "1":
                         operacao = "+";
                         primeiroNumero = PegarPrimeiroNumero();
                         segundoNumero = PegarSegundoNumero();
                         resultado = calculo.Somar(primeiroNumero, segundoNumero);
 
-                        Console.WriteLine($"A soma ficou em: {resultado}");
+                        Console.WriteLine($"A resposta da opercao ficou em: {resultado}");
                         Console.ReadLine();
 
                         listaCalculos.Add($"{primeiroNumero} {operacao} {segundoNumero} = {resultado}");
@@ -37,10 +40,45 @@
                         segundoNumero = PegarSegundoNumero();
                         resultado = calculo.Subtrair(primeiroNumero, segundoNumero);
 
-                        Console.WriteLine($"A subtracao ficou em: {resultado}");
+                        Console.WriteLine($"A resposta da opercao ficou em: {resultado}");
                         Console.ReadLine();
 
                         listaCalculos.Add($"{primeiroNumero} {operacao} {segundoNumero} = {resultado}");
+                        break;
+
+                    case "3":
+                        operacao = "*";
+                        primeiroNumero = PegarPrimeiroNumero();
+                        segundoNumero = PegarSegundoNumero();
+                        resultado = calculo.Multiplicar(primeiroNumero, segundoNumero);
+
+                        Console.WriteLine($"A resposta da opercao ficou em: {resultado}");
+                        Console.ReadLine();
+
+                        listaCalculos.Add($"{primeiroNumero} {operacao} {segundoNumero} = {resultado}");
+                        break;
+
+                    case "4":
+                        operacao = "/";
+                        primeiroNumero = PegarPrimeiroNumero();
+                        segundoNumero = PegarSegundoNumero();
+                        resultado = calculo.Dividir(primeiroNumero, segundoNumero);
+
+                        Console.WriteLine($"A resposta da opercao ficou em: {resultado}");
+                        Console.ReadLine();
+
+                        listaCalculos.Add($"{primeiroNumero} {operacao} {segundoNumero} = {resultado}");
+                        break;
+
+                        case "5":
+                        Console.Clear();
+
+                        foreach (string item in listaCalculos)
+                        {
+                            Console.WriteLine(item);
+                        }
+
+                        Console.ReadLine();
                         break;
                 }
             }
