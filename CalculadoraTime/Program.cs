@@ -8,9 +8,6 @@
         }
 
 
-        public void Calcular()
-        {
-            return;
-        }
+        
     }
 }
