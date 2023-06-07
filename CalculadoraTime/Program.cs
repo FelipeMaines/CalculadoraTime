@@ -70,7 +70,16 @@
                         listaCalculos.Add($"{primeiroNumero} {operacao} {segundoNumero} = {resultado}");
                         break;
 
+                        case "5":
+                        Console.Clear();
 
+                        foreach (string item in listaCalculos)
+                        {
+                            Console.WriteLine(item);
+                        }
+
+                        Console.ReadLine();
+                        break;
                 }
             }
             
