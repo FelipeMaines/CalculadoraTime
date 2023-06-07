@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CalculadoraTime
 {
-    internal class TelaPrincipal
+    public class TelaPrincipal
     {
         public string ApresentarMenu()
         { 
